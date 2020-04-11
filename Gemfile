@@ -22,7 +22,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'cancancan', '~> 1.10'
 gem 'rolify'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
