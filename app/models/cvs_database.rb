@@ -1,2 +1,0 @@
-class CvsDatabase < ApplicationRecord
-end

@@ -1,0 +1,24 @@
+<h1>Listing Datasets</h1>
+
+<%= link_to 'New Dataset', new_dataset_path %>
+<table>
+  <tr>
+    <th class="col-md-2">Title</th>
+    <th class="col-md-2">Description</th>
+    <th class="col-md-2">Creator</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @datasets.each do |dataset| %>
+    <tr>
+      <td class="col-md-2"><%= dataset.title %></td>
+      <td class="col-md-2"><%= dataset.text %></td>
+      <td class="col-md-2"><%= dataset.user.try(:email) %></td>
+      <td class="col-md-4"><%= link_to 'Show', dataset_path(dataset) %></td>
+      <td class="col-md-4"><%= link_to 'Destroy', dataset_path(dataset),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

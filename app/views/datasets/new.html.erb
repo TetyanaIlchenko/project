@@ -1,0 +1,24 @@
+<h1>New Dataset</h1>
+
+
+<%= form_with scope: :dataset, url: datasets_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= form.label :csv_file %><br>
+    <%= form.file_field :csv_file ,accept: 'text/csv'%>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', datasets_path %>

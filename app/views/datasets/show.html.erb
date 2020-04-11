@@ -1,0 +1,19 @@
+<p>
+  <strong>Title:</strong>
+  <%= @dataset.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @dataset.text %>
+</p>
+
+
+<% if @dataset.csv_file.attached? %>
+<p>
+<strong>Dataset file</strong>
+<%= link_to "Download file", rails_blob_path(@dataset.csv_file, disposition: "attachment") %>
+</p>
+<% end %>
+
+<%= link_to 'Back', datasets_path %>
