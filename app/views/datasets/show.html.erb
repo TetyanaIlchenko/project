@@ -14,6 +14,22 @@
 <strong>Dataset file</strong>
 <%= link_to "Download file", rails_blob_path(@dataset.csv_file, disposition: "attachment") %>
 </p>
+<strong>
+  Dataset table:
+</strong>
+<%= @dataframe.to_html().html_safe%>
+<strong>
+  Columns description:
+<%= @dataframe.describe().to_html().html_safe%>
+</strong>
+
+<strong>
+  Correlation table
+<%= @dataframe.corr().to_html().html_safe%>
+</strong>
+
 <% end %>
+
+
 
 <%= link_to 'Back', datasets_path %>

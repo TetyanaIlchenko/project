@@ -1,5 +1,8 @@
+require 'csv'
+require 'daru'
 class DatasetsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
+  caches_page :show
 
   def index
    @datasets = Dataset.all
@@ -10,6 +13,7 @@ class DatasetsController < ApplicationController
 
   def show
    @dataset = Dataset.find(params[:id])
+   @dataframe = dataset_df
   end
 
   def create
@@ -33,4 +37,7 @@ class DatasetsController < ApplicationController
     params.require(:dataset).permit(:title, :text, :csv_file)
   end
 
+  def dataset_df
+   Daru::DataFrame.from_csv(ActiveStorage::Blob.service.path_for(@dataset.csv_file.key))
+  end
 end

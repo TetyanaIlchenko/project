@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyser</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="gfn2jwn5ft6hgt0Z9eiH06XPE77cr1pp6dwA1fb6JJrqgYuo7xfFX1fz1dRwy1gPqbCfDq3I72fBf2ZizytYKg==" />
+    
+
+    <link rel="stylesheet" media="all" href="/assets/datasets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/application.self-ea193e527686233e53c3b31354be0bf3d74448155457825f8a2ec240b0eb61bf.css?body=1" data-turbolinks-track="reload" />
+    <script src="/packs/js/application-161986fca519d06d173f.js" data-turbolinks-track="reload"></script>
+
+  </head>
+
+  <body>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile </a>
+           <ul class="dropdown-menu">
+               <li><a href="/users/edit">Edit profile</a></li>
+               <li role="separator" class="divider"></li>
+               <li><a rel="nofollow" data-method="delete" href="/users/sign_out">Logout</a></li>
+           </ul>
+         </li>
+       </ul>
+   </nav>
+ <div id="main-container" class="container">
+   <p>
+  <strong>Title:</strong>
+  Houses rent
+</p>
+
+<p>
+  <strong>Text:</strong>
+  Table which describes houses rent 
+</p>
+
+
+<p>
+<strong>Dataset file</strong>
+<a href="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f567090a2bbc355ed5b0e3b036f5cb8e19f45502/houses_to_rent.csv?disposition=attachment">Download file</a>
+</p>
+<strong>
+  Dataset table:
+</strong>
+<b> Daru::DataFrame(6080x14) </b>
+<table border="1" class="dataframe">
+  <thead>
+  
+    <tr>
+      <th></th>
+      
+        <th></th>
+      
+        <th>city</th>
+      
+        <th>area</th>
+      
+        <th>rooms</th>
+      
+        <th>bathroom</th>
+      
+        <th>parking spaces</th>
+      
+        <th>floor</th>
+      
+        <th>animal</th>
+      
+        <th>furniture</th>
+      
+        <th>hoa</th>
+      
+        <th>rent amount</th>
+      
+        <th>property tax</th>
+      
+        <th>fire insurance</th>
+      
+        <th>total</th>
+      
+    </tr>
+  
+</thead>
+  <tbody>
+  
+    <tr>
+      <td>0</td>
+      
+        <td>0</td>
+      
+        <td>1</td>
+      
+        <td>240</td>
+      
+        <td>3</td>
+      
+        <td>3</td>
+      
+        <td>4</td>
+      
+        <td>-</td>
+      
+        <td>acept</td>
+      
+        <td>furnished</td>
+      
+        <td>R$0</td>
+      
+        <td>R$8,000</td>
+      
+        <td>R$1,000</td>
+      
+        <td>R$121</td>
+      
+        <td>R$9,121</td>
+      
+    </tr>
+  
+    <tr>
+      <td>1</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+        <td>64</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>10</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$540</td>
+      
+        <td>R$820</td>
+      
+        <td>R$122</td>
+      
+        <td>R$11</td>
+      
+        <td>R$1,493</td>
+      
+    </tr>
+  
+    <tr>
+      <td>2</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>443</td>
+      
+        <td>5</td>
+      
+        <td>5</td>
+      
+        <td>4</td>
+      
+        <td>3</td>
+      
+        <td>acept</td>
+      
+        <td>furnished</td>
+      
+        <td>R$4,172</td>
+      
+        <td>R$7,000</td>
+      
+        <td>R$1,417</td>
+      
+        <td>R$89</td>
+      
+        <td>R$12,680</td>
+      
+    </tr>
+  
+    <tr>
+      <td>3</td>
+      
+        <td>3</td>
+      
+        <td>1</td>
+      
+        <td>73</td>
+      
+        <td>2</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>12</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$700</td>
+      
+        <td>R$1,250</td>
+      
+        <td>R$150</td>
+      
+        <td>R$16</td>
+      
+        <td>R$2,116</td>
+      
+    </tr>
+  
+    <tr>
+      <td>4</td>
+      
+        <td>4</td>
+      
+        <td>1</td>
+      
+        <td>19</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+        <td>-</td>
+      
+        <td>not acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$0</td>
+      
+        <td>R$1,200</td>
+      
+        <td>R$41</td>
+      
+        <td>R$16</td>
+      
+        <td>R$1,257</td>
+      
+    </tr>
+  
+    <tr>
+      <td>5</td>
+      
+        <td>5</td>
+      
+        <td>1</td>
+      
+        <td>13</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+        <td>2</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$0</td>
+      
+        <td>R$2,200</td>
+      
+        <td>R$42</td>
+      
+        <td>R$28</td>
+      
+        <td>R$2,270</td>
+      
+    </tr>
+  
+    <tr>
+      <td>6</td>
+      
+        <td>6</td>
+      
+        <td>1</td>
+      
+        <td>55</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>2</td>
+      
+        <td>acept</td>
+      
+        <td>furnished</td>
+      
+        <td>R$1,950</td>
+      
+        <td>R$5,000</td>
+      
+        <td>R$375</td>
+      
+        <td>R$64</td>
+      
+        <td>R$7,389</td>
+      
+    </tr>
+  
+    <tr>
+      <td>7</td>
+      
+        <td>7</td>
+      
+        <td>1</td>
+      
+        <td>55</td>
+      
+        <td>2</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>2</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$600</td>
+      
+        <td>R$1,300</td>
+      
+        <td>R$67</td>
+      
+        <td>R$17</td>
+      
+        <td>R$1,984</td>
+      
+    </tr>
+  
+    <tr>
+      <td>8</td>
+      
+        <td>8</td>
+      
+        <td>1</td>
+      
+        <td>82</td>
+      
+        <td>3</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>3</td>
+      
+        <td>acept</td>
+      
+        <td>furnished</td>
+      
+        <td>R$828</td>
+      
+        <td>R$2,000</td>
+      
+        <td>R$109</td>
+      
+        <td>R$26</td>
+      
+        <td>R$2,963</td>
+      
+    </tr>
+  
+    <tr>
+      <td>9</td>
+      
+        <td>9</td>
+      
+        <td>1</td>
+      
+        <td>32</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>16</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$533</td>
+      
+        <td>R$2,900</td>
+      
+        <td>R$0</td>
+      
+        <td>R$37</td>
+      
+        <td>R$3,470</td>
+      
+    </tr>
+  
+    <tr>
+      <td>10</td>
+      
+        <td>10</td>
+      
+        <td>0</td>
+      
+        <td>60</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+        <td>6</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$480</td>
+      
+        <td>R$720</td>
+      
+        <td>R$20</td>
+      
+        <td>R$10</td>
+      
+        <td>R$1,230</td>
+      
+    </tr>
+  
+    <tr>
+      <td>11</td>
+      
+        <td>11</td>
+      
+        <td>0</td>
+      
+        <td>64</td>
+      
+        <td>1</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>4</td>
+      
+        <td>acept</td>
+      
+        <td>furnished</td>
+      
+        <td>R$406</td>
+      
+        <td>R$1,550</td>
+      
+        <td>R$0</td>
+      
+        <td>R$7</td>
+      
+        <td>R$1,963</td>
+      
+    </tr>
+  
+    <tr>
+      <td>12</td>
+      
+        <td>12</td>
+      
+        <td>1</td>
+      
+        <td>20</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+        <td>4</td>
+      
+        <td>acept</td>
+      
+        <td>furnished</td>
+      
+        <td>R$602</td>
+      
+        <td>R$1,800</td>
+      
+        <td>R$130</td>
+      
+        <td>R$23</td>
+      
+        <td>R$2,555</td>
+      
+    </tr>
+  
+    <tr>
+      <td>13</td>
+      
+        <td>13</td>
+      
+        <td>1</td>
+      
+        <td>375</td>
+      
+        <td>4</td>
+      
+        <td>5</td>
+      
+        <td>5</td>
+      
+        <td>1</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$4,793</td>
+      
+        <td>R$15,000</td>
+      
+        <td>R$2,805</td>
+      
+        <td>R$191</td>
+      
+        <td>R$22,790</td>
+      
+    </tr>
+  
+    <tr>
+      <td>14</td>
+      
+        <td>14</td>
+      
+        <td>1</td>
+      
+        <td>92</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>7</td>
+      
+        <td>not acept</td>
+      
+        <td>furnished</td>
+      
+        <td>R$690</td>
+      
+        <td>R$3,950</td>
+      
+        <td>R$0</td>
+      
+        <td>R$51</td>
+      
+        <td>R$4,691</td>
+      
+    </tr>
+  
+    <tr>
+      <td>15</td>
+      
+        <td>15</td>
+      
+        <td>0</td>
+      
+        <td>56</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$345</td>
+      
+        <td>R$950</td>
+      
+        <td>R$11</td>
+      
+        <td>R$13</td>
+      
+        <td>R$1,319</td>
+      
+    </tr>
+  
+    <tr>
+      <td>16</td>
+      
+        <td>16</td>
+      
+        <td>0</td>
+      
+        <td>188</td>
+      
+        <td>2</td>
+      
+        <td>3</td>
+      
+        <td>8</td>
+      
+        <td>-</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$0</td>
+      
+        <td>R$3,010</td>
+      
+        <td>R$584</td>
+      
+        <td>R$46</td>
+      
+        <td>R$3,640</td>
+      
+    </tr>
+  
+    <tr>
+      <td>17</td>
+      
+        <td>17</td>
+      
+        <td>1</td>
+      
+        <td>100</td>
+      
+        <td>3</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>-</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$0</td>
+      
+        <td>R$3,500</td>
+      
+        <td>R$260</td>
+      
+        <td>R$53</td>
+      
+        <td>R$3,813</td>
+      
+    </tr>
+  
+    <tr>
+      <td>18</td>
+      
+        <td>18</td>
+      
+        <td>1</td>
+      
+        <td>192</td>
+      
+        <td>3</td>
+      
+        <td>3</td>
+      
+        <td>2</td>
+      
+        <td>13</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$2,100</td>
+      
+        <td>R$7,800</td>
+      
+        <td>R$634</td>
+      
+        <td>R$99</td>
+      
+        <td>R$10,630</td>
+      
+    </tr>
+  
+    <tr>
+      <td>19</td>
+      
+        <td>19</td>
+      
+        <td>1</td>
+      
+        <td>93</td>
+      
+        <td>3</td>
+      
+        <td>2</td>
+      
+        <td>1</td>
+      
+        <td>10</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$1,497</td>
+      
+        <td>R$3,500</td>
+      
+        <td>R$227</td>
+      
+        <td>R$45</td>
+      
+        <td>R$5,269</td>
+      
+    </tr>
+  
+    <tr>
+      <td>20</td>
+      
+        <td>20</td>
+      
+        <td>1</td>
+      
+        <td>155</td>
+      
+        <td>3</td>
+      
+        <td>3</td>
+      
+        <td>2</td>
+      
+        <td>-</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$0</td>
+      
+        <td>R$2,650</td>
+      
+        <td>R$233</td>
+      
+        <td>R$40</td>
+      
+        <td>R$2,923</td>
+      
+    </tr>
+  
+    <tr>
+      <td>21</td>
+      
+        <td>21</td>
+      
+        <td>1</td>
+      
+        <td>80</td>
+      
+        <td>2</td>
+      
+        <td>2</td>
+      
+        <td>0</td>
+      
+        <td>9</td>
+      
+        <td>not acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$600</td>
+      
+        <td>R$2,550</td>
+      
+        <td>R$46</td>
+      
+        <td>R$33</td>
+      
+        <td>R$3,229</td>
+      
+    </tr>
+  
+    <tr>
+      <td>22</td>
+      
+        <td>22</td>
+      
+        <td>1</td>
+      
+        <td>65</td>
+      
+        <td>2</td>
+      
+        <td>2</td>
+      
+        <td>2</td>
+      
+        <td>14</td>
+      
+        <td>not acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$907</td>
+      
+        <td>R$3,500</td>
+      
+        <td>R$0</td>
+      
+        <td>R$45</td>
+      
+        <td>R$4,452</td>
+      
+    </tr>
+  
+    <tr>
+      <td>23</td>
+      
+        <td>23</td>
+      
+        <td>1</td>
+      
+        <td>320</td>
+      
+        <td>3</td>
+      
+        <td>3</td>
+      
+        <td>4</td>
+      
+        <td>-</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$0</td>
+      
+        <td>R$9,000</td>
+      
+        <td>R$1,000</td>
+      
+        <td>R$136</td>
+      
+        <td>R$10,140</td>
+      
+    </tr>
+  
+    <tr>
+      <td>24</td>
+      
+        <td>24</td>
+      
+        <td>1</td>
+      
+        <td>180</td>
+      
+        <td>3</td>
+      
+        <td>5</td>
+      
+        <td>3</td>
+      
+        <td>3</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$2,900</td>
+      
+        <td>R$8,100</td>
+      
+        <td>R$0</td>
+      
+        <td>R$103</td>
+      
+        <td>R$11,100</td>
+      
+    </tr>
+  
+    <tr>
+      <td>25</td>
+      
+        <td>25</td>
+      
+        <td>1</td>
+      
+        <td>31</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>4</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$272</td>
+      
+        <td>R$3,200</td>
+      
+        <td>R$64</td>
+      
+        <td>R$41</td>
+      
+        <td>R$3,577</td>
+      
+    </tr>
+  
+    <tr>
+      <td>26</td>
+      
+        <td>26</td>
+      
+        <td>1</td>
+      
+        <td>105</td>
+      
+        <td>4</td>
+      
+        <td>2</td>
+      
+        <td>2</td>
+      
+        <td>3</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$1,659</td>
+      
+        <td>R$6,500</td>
+      
+        <td>R$400</td>
+      
+        <td>R$83</td>
+      
+        <td>R$8,642</td>
+      
+    </tr>
+  
+    <tr>
+      <td>27</td>
+      
+        <td>27</td>
+      
+        <td>1</td>
+      
+        <td>300</td>
+      
+        <td>3</td>
+      
+        <td>4</td>
+      
+        <td>2</td>
+      
+        <td>9</td>
+      
+        <td>acept</td>
+      
+        <td>furnished</td>
+      
+        <td>R$2,000</td>
+      
+        <td>R$14,000</td>
+      
+        <td>R$1,084</td>
+      
+        <td>R$178</td>
+      
+        <td>R$17,260</td>
+      
+    </tr>
+  
+    <tr>
+      <td>28</td>
+      
+        <td>28</td>
+      
+        <td>0</td>
+      
+        <td>150</td>
+      
+        <td>3</td>
+      
+        <td>2</td>
+      
+        <td>2</td>
+      
+        <td>13</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$1,370</td>
+      
+        <td>R$1,800</td>
+      
+        <td>R$250</td>
+      
+        <td>R$23</td>
+      
+        <td>R$3,443</td>
+      
+    </tr>
+  
+    <tr>
+      <td>29</td>
+      
+        <td>29</td>
+      
+        <td>1</td>
+      
+        <td>130</td>
+      
+        <td>3</td>
+      
+        <td>3</td>
+      
+        <td>2</td>
+      
+        <td>-</td>
+      
+        <td>acept</td>
+      
+        <td>not furnished</td>
+      
+        <td>R$0</td>
+      
+        <td>R$6,000</td>
+      
+        <td>R$84</td>
+      
+        <td>R$91</td>
+      
+        <td>R$6,175</td>
+      
+    </tr>
+  
+
+  
+    <tr>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+    </tr>
+
+    
+
+    <tr>
+      <td>6079</td>
+        
+          <td>6079</td>
+        
+          <td>1</td>
+        
+          <td>60</td>
+        
+          <td>2</td>
+        
+          <td>1</td>
+        
+          <td>1</td>
+        
+          <td>4</td>
+        
+          <td>acept</td>
+        
+          <td>furnished</td>
+        
+          <td>R$489</td>
+        
+          <td>R$1,900</td>
+        
+          <td>R$0</td>
+        
+          <td>R$25</td>
+        
+          <td>R$2,414</td>
+        
+    </tr>
+  
+</tbody>
+</table>
+<strong>
+  Columns description:
+<b> Daru::DataFrame(5x6) </b>
+<table border="1" class="dataframe">
+  <thead>
+  
+    <tr>
+      <th></th>
+      
+        <th></th>
+      
+        <th>city</th>
+      
+        <th>area</th>
+      
+        <th>rooms</th>
+      
+        <th>bathroom</th>
+      
+        <th>parking spaces</th>
+      
+    </tr>
+  
+</thead>
+  <tbody>
+  
+    <tr>
+      <td>count</td>
+      
+        <td>6080</td>
+      
+        <td>6080</td>
+      
+        <td>6080</td>
+      
+        <td>6080</td>
+      
+        <td>6080</td>
+      
+        <td>6080</td>
+      
+    </tr>
+  
+    <tr>
+      <td>mean</td>
+      
+        <td>3039.5</td>
+      
+        <td>0.8633223684210526</td>
+      
+        <td>151.14391447368422</td>
+      
+        <td>2.492598684210526</td>
+      
+        <td>2.341611842105263</td>
+      
+        <td>1.75625</td>
+      
+    </tr>
+  
+    <tr>
+      <td>std</td>
+      
+        <td>1755.2891499693148</td>
+      
+        <td>0.3435349577192853</td>
+      
+        <td>375.55948526695846</td>
+      
+        <td>1.1296645317963754</td>
+      
+        <td>1.438860484545733</td>
+      
+        <td>1.6119088446235201</td>
+      
+    </tr>
+  
+    <tr>
+      <td>min</td>
+      
+        <td>0</td>
+      
+        <td>0</td>
+      
+        <td>10</td>
+      
+        <td>1</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>max</td>
+      
+        <td>6079</td>
+      
+        <td>1</td>
+      
+        <td>24606</td>
+      
+        <td>10</td>
+      
+        <td>10</td>
+      
+        <td>12</td>
+      
+    </tr>
+  
+
+  
+</tbody>
+</table>
+</strong>
+
+<strong>
+  Correlation table
+<b> Daru::DataFrame(6x6) </b>
+<table border="1" class="dataframe">
+  <thead>
+  
+    <tr>
+      <th></th>
+      
+        <th></th>
+      
+        <th>city</th>
+      
+        <th>area</th>
+      
+        <th>rooms</th>
+      
+        <th>bathroom</th>
+      
+        <th>parking spaces</th>
+      
+    </tr>
+  
+</thead>
+  <tbody>
+  
+    <tr>
+      <td></td>
+      
+        <td>1.0</td>
+      
+        <td>0.0008916547770492387</td>
+      
+        <td>0.00954403095352146</td>
+      
+        <td>-0.007722721840453061</td>
+      
+        <td>-0.01169086940321037</td>
+      
+        <td>-0.006101786599486895</td>
+      
+    </tr>
+  
+    <tr>
+      <td>city</td>
+      
+        <td>0.0008916547770492387</td>
+      
+        <td>0.9999999999999999</td>
+      
+        <td>0.007709547991997892</td>
+      
+        <td>0.035330554980070046</td>
+      
+        <td>0.08914923434556046</td>
+      
+        <td>0.03102693657664271</td>
+      
+    </tr>
+  
+    <tr>
+      <td>area</td>
+      
+        <td>0.00954403095352146</td>
+      
+        <td>0.007709547991997892</td>
+      
+        <td>0.9999999999999998</td>
+      
+        <td>0.26695721643538506</td>
+      
+        <td>0.27548468659912073</td>
+      
+        <td>0.2524923128660016</td>
+      
+    </tr>
+  
+    <tr>
+      <td>rooms</td>
+      
+        <td>-0.007722721840453061</td>
+      
+        <td>0.035330554980070046</td>
+      
+        <td>0.26695721643538506</td>
+      
+        <td>1.0</td>
+      
+        <td>0.7468760585596013</td>
+      
+        <td>0.6249717753675503</td>
+      
+    </tr>
+  
+    <tr>
+      <td>bathroom</td>
+      
+        <td>-0.01169086940321037</td>
+      
+        <td>0.08914923434556046</td>
+      
+        <td>0.27548468659912073</td>
+      
+        <td>0.7468760585596013</td>
+      
+        <td>0.9999999999999998</td>
+      
+        <td>0.6858785743964474</td>
+      
+    </tr>
+  
+    <tr>
+      <td>parking spaces</td>
+      
+        <td>-0.006101786599486895</td>
+      
+        <td>0.03102693657664271</td>
+      
+        <td>0.2524923128660016</td>
+      
+        <td>0.6249717753675503</td>
+      
+        <td>0.6858785743964474</td>
+      
+        <td>0.9999999999999998</td>
+      
+    </tr>
+  
+
+  
+</tbody>
+</table>
+</strong>
+
+
+
+
+<a href="/datasets">Back</a>
+
+ </div>
+
+  </body>
+</html>

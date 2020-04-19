@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyser</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="8lbuxpK7aBf1rte21ivLuLe1E50WFj3T8Vou387zE79LyLJX32pjhW2Ndo8vTVu+avzd/fiJG5Wq3PeaCEz8nA==" />
+    
+
+    <link rel="stylesheet" media="all" href="/assets/datasets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/application.self-ea193e527686233e53c3b31354be0bf3d74448155457825f8a2ec240b0eb61bf.css?body=1" data-turbolinks-track="reload" />
+    <script src="/packs/js/application-161986fca519d06d173f.js" data-turbolinks-track="reload"></script>
+
+  </head>
+
+  <body>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile </a>
+           <ul class="dropdown-menu">
+               <li><a href="/users/edit">Edit profile</a></li>
+               <li role="separator" class="divider"></li>
+               <li><a rel="nofollow" data-method="delete" href="/users/sign_out">Logout</a></li>
+           </ul>
+         </li>
+       </ul>
+   </nav>
+ <div id="main-container" class="container">
+   <p>
+  <strong>Title:</strong>
+  Cancer classification
+</p>
+
+<p>
+  <strong>Text:</strong>
+  Sample dataset
+</p>
+
+
+<p>
+<strong>Dataset file</strong>
+<a href="/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20a9060d30dd026722184370aa28edae90c197e0/us-counties.csv?disposition=attachment">Download file</a>
+</p>
+<strong>
+  Dataset table:
+</strong>
+<b> Daru::DataFrame(45880x6) </b>
+<table border="1" class="dataframe">
+  <thead>
+  
+    <tr>
+      <th></th>
+      
+        <th>date</th>
+      
+        <th>county</th>
+      
+        <th>state</th>
+      
+        <th>fips</th>
+      
+        <th>cases</th>
+      
+        <th>deaths</th>
+      
+    </tr>
+  
+</thead>
+  <tbody>
+  
+    <tr>
+      <td>0</td>
+      
+        <td>2020-01-21</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>1</td>
+      
+        <td>2020-01-22</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>2</td>
+      
+        <td>2020-01-23</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>3</td>
+      
+        <td>2020-01-24</td>
+      
+        <td>Cook</td>
+      
+        <td>Illinois</td>
+      
+        <td>17031</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>4</td>
+      
+        <td>2020-01-24</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>5</td>
+      
+        <td>2020-01-25</td>
+      
+        <td>Orange</td>
+      
+        <td>California</td>
+      
+        <td>6059.0</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>6</td>
+      
+        <td>2020-01-25</td>
+      
+        <td>Cook</td>
+      
+        <td>Illinois</td>
+      
+        <td>17031</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>7</td>
+      
+        <td>2020-01-25</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>8</td>
+      
+        <td>2020-01-26</td>
+      
+        <td>Maricopa</td>
+      
+        <td>Arizona</td>
+      
+        <td>2059</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>9</td>
+      
+        <td>2020-01-26</td>
+      
+        <td>Los Angeles</td>
+      
+        <td>California</td>
+      
+        <td>3103</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>10</td>
+      
+        <td>2020-01-26</td>
+      
+        <td>Orange</td>
+      
+        <td>California</td>
+      
+        <td>6059.0</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>11</td>
+      
+        <td>2020-01-26</td>
+      
+        <td>Cook</td>
+      
+        <td>Illinois</td>
+      
+        <td>17031</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>12</td>
+      
+        <td>2020-01-26</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>13</td>
+      
+        <td>2020-01-27</td>
+      
+        <td>Maricopa</td>
+      
+        <td>Arizona</td>
+      
+        <td>2059</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>14</td>
+      
+        <td>2020-01-27</td>
+      
+        <td>Los Angeles</td>
+      
+        <td>California</td>
+      
+        <td>3103</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>15</td>
+      
+        <td>2020-01-27</td>
+      
+        <td>Orange</td>
+      
+        <td>California</td>
+      
+        <td>6059.0</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>16</td>
+      
+        <td>2020-01-27</td>
+      
+        <td>Cook</td>
+      
+        <td>Illinois</td>
+      
+        <td>17031</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>17</td>
+      
+        <td>2020-01-27</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>18</td>
+      
+        <td>2020-01-28</td>
+      
+        <td>Maricopa</td>
+      
+        <td>Arizona</td>
+      
+        <td>2059</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>19</td>
+      
+        <td>2020-01-28</td>
+      
+        <td>Los Angeles</td>
+      
+        <td>California</td>
+      
+        <td>3103</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>20</td>
+      
+        <td>2020-01-28</td>
+      
+        <td>Orange</td>
+      
+        <td>California</td>
+      
+        <td>6059.0</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>21</td>
+      
+        <td>2020-01-28</td>
+      
+        <td>Cook</td>
+      
+        <td>Illinois</td>
+      
+        <td>17031</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>22</td>
+      
+        <td>2020-01-28</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>23</td>
+      
+        <td>2020-01-29</td>
+      
+        <td>Maricopa</td>
+      
+        <td>Arizona</td>
+      
+        <td>2059</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>24</td>
+      
+        <td>2020-01-29</td>
+      
+        <td>Los Angeles</td>
+      
+        <td>California</td>
+      
+        <td>3103</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>25</td>
+      
+        <td>2020-01-29</td>
+      
+        <td>Orange</td>
+      
+        <td>California</td>
+      
+        <td>6059.0</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>26</td>
+      
+        <td>2020-01-29</td>
+      
+        <td>Cook</td>
+      
+        <td>Illinois</td>
+      
+        <td>17031</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>27</td>
+      
+        <td>2020-01-29</td>
+      
+        <td>Snohomish</td>
+      
+        <td>Washington</td>
+      
+        <td>53061</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>28</td>
+      
+        <td>2020-01-30</td>
+      
+        <td>Maricopa</td>
+      
+        <td>Arizona</td>
+      
+        <td>2059</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+    <tr>
+      <td>29</td>
+      
+        <td>2020-01-30</td>
+      
+        <td>Los Angeles</td>
+      
+        <td>California</td>
+      
+        <td>3103</td>
+      
+        <td>1</td>
+      
+        <td>0</td>
+      
+    </tr>
+  
+
+  
+    <tr>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+        <td>...</td>
+      
+    </tr>
+
+    
+
+    <tr>
+      <td>45879</td>
+        
+          <td>2020-04-09</td>
+        
+          <td>Washakie</td>
+        
+          <td>Wyoming</td>
+        
+          <td>56043</td>
+        
+          <td>4</td>
+        
+          <td>0</td>
+        
+    </tr>
+  
+</tbody>
+</table>
+
+<a href="/datasets">Back</a>
+
+ </div>
+
+  </body>
+</html>
