@@ -9,7 +9,7 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
-
+  config.public_file_server.enabled = true
   #set storage
 
 

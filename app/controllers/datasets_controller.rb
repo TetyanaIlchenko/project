@@ -26,6 +26,7 @@ class DatasetsController < ApplicationController
   end
 
   def destroy
+    expire_page :action => :show
     @dataset = Dataset.find(params[:id])
     @dataset.destroy
 

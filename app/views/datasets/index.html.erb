@@ -16,9 +16,12 @@
       <td class="col-md-2"><%= dataset.text %></td>
       <td class="col-md-2"><%= dataset.user.try(:email) %></td>
       <td class="col-md-4"><%= link_to 'Show', dataset_path(dataset) %></td>
+
+  <%if admin? %>
       <td class="col-md-4"><%= link_to 'Destroy', dataset_path(dataset),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
     </tr>
   <% end %>
 </table>
